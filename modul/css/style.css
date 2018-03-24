@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	width: 700px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 20px auto;
+    position: absolute;
+}
+.sq{
+	width: 200px;
+	height: 200px;
+	margin: 200px auto;
+	position: relative;
+	background:red;
+	z-index: 10;
+}
+.romb{
+	width: 120px;
+    height: 120px;
+    background: blue;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: 2px;
+
+}
+.circle{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: green;
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+@keyframes romb-rotate {
+from { transform: rotate(60deg);}
+50% { transform: rotate(90deg);}
+to { transform: rotate(120deg);}
+}
